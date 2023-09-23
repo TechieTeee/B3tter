@@ -1,4 +1,14 @@
+/* global.css */
 @tailwind base;
 @tailwind components;
+
+/* Import the Fredoka One font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* Apply the font to the entire page */
+html, body {
+  font-family: 'Fredoka One', sans-serif;
+}
+
 @tailwind utilities;
 
