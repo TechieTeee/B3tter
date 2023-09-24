@@ -9,17 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@biconomy/account": "^3.1.0",
     "@biconomy/paymaster": "^3.1.0",
     "@biconomy/smart-account": "^2.0.2",
     "@huggingface/inference": "^2.5.1",
     "ai": "2.1.27",
     "next": "13.4.4-canary.11",
+    "node-cron": "^3.0.2",
     "openai-edge": "^0.5.1",
     "react": "18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
+    "@types/node-cron": "^3.0.9",
     "@types/react": "18.2.8",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "^10.4.14",

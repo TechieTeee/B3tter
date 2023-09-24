@@ -50,7 +50,7 @@ export default function Chat() {
         <input
           className="flex-1 px-4 py-2 text-white bg-gray-700 bg-opacity-60 border rounded-full placeholder-white::placeholder focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
           type="text"
-          placeholder="Say something..."
+          placeholder="Hey there, I'm B3tter Bear, fire away with your medical question."
           value={input}
           onChange={handleInputChange}
         />
