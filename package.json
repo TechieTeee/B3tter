@@ -13,6 +13,7 @@
     "@biconomy/paymaster": "^3.1.0",
     "@biconomy/smart-account": "^2.0.2",
     "@huggingface/inference": "^2.5.1",
+    "@lit-protocol/lit-node-client": "^2.2.54",
     "ai": "2.1.27",
     "next": "13.4.4-canary.11",
     "node-cron": "^3.0.2",
