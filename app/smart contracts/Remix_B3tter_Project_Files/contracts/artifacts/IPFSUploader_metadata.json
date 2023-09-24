@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "FileUploaded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "downloadDecryptedFile",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "encryptedFile",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "encryptionKey",
+						"type": "bytes32"
+					}
+				],
+				"name": "uploadEncryptedFile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"downloadDecryptedFile(string)": {
+					"params": {
+						"ipfsHash": "The IPFS hash of the file."
+					},
+					"returns": {
+						"_0": "The decrypted file data."
+					}
+				},
+				"uploadEncryptedFile(string,bytes,bytes32)": {
+					"params": {
+						"encryptedFile": "The encrypted file data.",
+						"encryptionKey": "The encryption key for the file.",
+						"ipfsHash": "The IPFS hash of the file."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"downloadDecryptedFile(string)": {
+					"notice": "Downloads and decrypts a file from IPFS."
+				},
+				"uploadEncryptedFile(string,bytes,bytes32)": {
+					"notice": "Uploads an encrypted file to IPFS."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/B3tter.sol": "IPFSUploader"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/B3tter.sol": {
+			"keccak256": "0x8f213d9ee40a7ef19c7d8e6033794e679d1f1330051e9f73647f5940369ca9d2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e01359236068a58307ff62034b5c75b3b6e16931eb341b2c6c39bd759e18e3bd",
+				"dweb:/ipfs/QmZGry8qXHCzkMAkXncpZ9K6hVjgdC1Z6Mzb873ou8vQ2B"
+			]
+		}
+	},
+	"version": 1
+}

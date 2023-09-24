@@ -1,0 +1,173 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newInsurance",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newPhysician",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newEmergencyContact",
+						"type": "address"
+					}
+				],
+				"name": "AccessControlChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "FileUploaded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "downloadDecryptedFile",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "encryptedFile",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "encryptionKey",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "insurance",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "primaryCarePhysician",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "emergencyContact",
+						"type": "address"
+					}
+				],
+				"name": "uploadEncryptedFile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"downloadDecryptedFile(string)": {
+					"params": {
+						"ipfsHash": "The IPFS hash of the file."
+					},
+					"returns": {
+						"_0": "The decrypted file data."
+					}
+				},
+				"uploadEncryptedFile(string,bytes,bytes32,address,address,address)": {
+					"params": {
+						"emergencyContact": "The emergency contact's address.",
+						"encryptedFile": "The encrypted file data.",
+						"encryptionKey": "The encryption key for the file.",
+						"insurance": "The insurance company's address.",
+						"ipfsHash": "The IPFS hash of the file.",
+						"primaryCarePhysician": "The primary care physician's address."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"downloadDecryptedFile(string)": {
+					"notice": "Downloads and decrypts a file from IPFS."
+				},
+				"uploadEncryptedFile(string,bytes,bytes32,address,address,address)": {
+					"notice": "Uploads an encrypted file to IPFS with initial access control."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/B3tter.sol": "B3tter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/B3tter.sol": {
+			"keccak256": "0x9ded2395a27a12088b1afa972d67fa630b23007b8e3aaaa5543f01a30a6e3b5a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f316fdb40382f448cdd9d272e88d8b1b7ed12371278b1b6be4149da5964cb15e",
+				"dweb:/ipfs/QmdRyyf1rhYaNfcisaaXH5ZBGCejES7p7bZhqegU25mRZg"
+			]
+		}
+	},
+	"version": 1
+}

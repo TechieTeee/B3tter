@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "burnWallet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createWallet",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					}
+				],
+				"name": "isValidWallet",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "walletToExpirationTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"burnWallet(address)": {
+					"params": {
+						"walletAddress": "The address of the wallet to burn."
+					}
+				},
+				"createWallet()": {
+					"returns": {
+						"_0": "The address of the new wallet."
+					}
+				},
+				"isValidWallet(address)": {
+					"params": {
+						"walletAddress": "The address of the wallet to check."
+					},
+					"returns": {
+						"_0": "True if the wallet address is valid, false otherwise."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"burnWallet(address)": {
+					"notice": "Burns the given wallet address."
+				},
+				"createWallet()": {
+					"notice": "Creates a new burnable wallet address."
+				},
+				"isValidWallet(address)": {
+					"notice": "Checks if the given wallet address is valid."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/B3tterBurn.sol": "BurnableWallet"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/B3tterBurn.sol": {
+			"keccak256": "0xf6679918930b05a51985b8617360fc214e6074791bb6ca78622de1e6fb01e5c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://452600b484f00b9d72116a93c3cf9067de6df6239b06980dd22060427b203722",
+				"dweb:/ipfs/QmbFqwzmpZF4EWkTcXnzqPfpZAtLmc1Pavz4Ps7QGZtmuF"
+			]
+		}
+	},
+	"version": 1
+}
