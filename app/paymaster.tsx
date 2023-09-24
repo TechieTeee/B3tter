@@ -1,4 +1,4 @@
-import { IPaymaster, BiconomyPaymaster } from '@biconomy/paymaster-ts';
+import { IPaymaster, BiconomyPaymaster } from '@biconomy/paymaster';
 
 // B3tter Paymaster Implementation
 // Allows B3tter uses to complete gasless transactions
