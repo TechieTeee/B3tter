@@ -1,11 +1,48 @@
 'use client'
 
-import { useChat } from 'ai/react'
-const imageUrl = 'https://clipartmag.com/images/blue-teddy-bear-clipart-23.png';
+import React, { useState, useEffect } from 'react';
+import { useChat } from 'ai/react';
 
+
+const imageUrl = 'https://clipartmag.com/images/blue-teddy-bear-clipart-23.png';
+declare global {
+  interface Window {
+    ethereum: any; // Define ethereum as a global property
+    web3: any; // Define web3 as a global property
+  }
+}
+
+function WalletConnectButton() {
+  const connect = async () => {
+    if (window.ethereum) {
+      try {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        window.web3 = new window.web3(window.ethereum);
+        const accounts = await window.web3.eth.getAccounts();
+        const walletAddress = accounts[0]; // Get the first account
+        console.log(`Wallet: ${walletAddress}`);
+      } catch (error) {
+        console.error("Error connecting to wallet:", error);
+      }
+    } else {
+      console.log("No wallet");
+    }
+  };
+
+  return (
+    <div>
+      <input
+        type="button"
+        value="Connect Wallet"
+        onClick={connect}
+        className="connect-wallet-button" // Assign the connect-wallet-button class here
+      />
+    </div>
+  );
+}
 
 export default function Chat() {
-  const { messages, input, handleInputChange, handleSubmit } = useChat()
+  const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 text-white">
@@ -20,22 +57,25 @@ export default function Chat() {
         </div>
       </nav>
 
+      {/* WalletConnectButton */}
+      <WalletConnectButton /> {/* Use the WalletConnectButton component here */}
+
       {/* Hero Image Container (Centered) */}
       <div className="flex items-center justify-center h-96">
         <img
-          src={imageUrl} // Use the image URL here
+          src={imageUrl}
           alt="Hero Image"
           className="max-w-full max-h-full"
         />
       </div>
 
       <div className="flex justify-center items-center">
-  <h1 className="hero-title">B3tter</h1>
-</div>
+        <h1 className="hero-title">B3tter</h1>
+      </div>
 
-<div className="flex justify-center items-center">
-  <h2 className="hero-subtitle">Doing Healthcare Better</h2>
-</div>
+      <div className="flex justify-center items-center">
+        <h2 className="hero-subtitle">Doing Healthcare Better</h2>
+      </div>
 
       {/* Chat Messages */}
       <div className="flex-1 p-4 md:p-8 overflow-y-auto">
@@ -108,6 +148,6 @@ export default function Chat() {
       </form>
 
     </div>
-  )
+  );
 }
-
+;

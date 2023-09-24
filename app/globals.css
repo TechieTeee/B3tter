@@ -10,6 +10,22 @@ html, body {
   font-family: 'Fredoka One', sans-serif;
 }
 
+
+/* Style for the Connect Wallet button */
+.connect-wallet-button {
+  background-color: teal;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.connect-wallet-button:hover {
+  background-color: #008080; /* Teal with a darker shade on hover */
+}
+
+
 .hero-title {
   font-weight: bold;
   font-family: "Fredoka One";
