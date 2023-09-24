@@ -20,7 +20,7 @@ Testnet Explorer Link: https://testnet-zkevm.polygonscan.com/address/0x631C44687
 
 B3tter Main Smart Contract F3VM Deployment on Calibration Testnet 
 ![image](https://github.com/TechieTeee/B3tter/assets/100870737/6f6d5934-1196-4cfc-b82a-671a843701fe)
-Transaction Hash: 0xea6ce8e9267210e72f462e78a58bb2a2df3581e7ce896e0f12285194f7d0c625
+-Transaction Hash: 0xea6ce8e9267210e72f462e78a58bb2a2df3581e7ce896e0f12285194f7d0c625
 Block Hash: 0x02e8851d38aa49660c15bf044a5b0a66ed6ce093a0f750c528e1cbab2f0830a6
 Contract Address: 0x631C446876CF255aaaD6A2b79Db6aFf04F5bBdEc
 Testnet Explorer Link: https://calibration.filfox.info/en/address/0x631C446876CF255aaaD6A2b79Db6aFf04F5bBdEc
