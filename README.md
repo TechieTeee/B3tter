@@ -28,7 +28,7 @@ Testnet Explorer Link: https://calibration.filfox.info/en/address/0x631C446876CF
 
 B3tter Smart Contract for Burnable Accounts Deployed on Polygon zkEVM (Expire 24 Hours After Creation)
 ![image](https://github.com/TechieTeee/B3tter/assets/100870737/093c7964-2479-4e6b-997a-828462027fba)
-Transaction Hash: 0xac2936c2aaa5d760d67bb8a2aedae74b851d45e8ad80f62e3f78f64c21a35f0e
-Block Hash: 0xb99375111139694d04b72937147cad145bd6e69ff143ecc0450f376b8e56115e
-Contract Address: 0x3Fbf1d96C26db74bc08e0d5d3E434957e907F90C
-Testnet Explorer Link: https://testnet-zkevm.polygonscan.com/address/0x3Fbf1d96C26db74bc08e0d5d3E434957e907F90C
+-Transaction Hash: 0xac2936c2aaa5d760d67bb8a2aedae74b851d45e8ad80f62e3f78f64c21a35f0e
+-Block Hash: 0xb99375111139694d04b72937147cad145bd6e69ff143ecc0450f376b8e56115e
+-Contract Address: 0x3Fbf1d96C26db74bc08e0d5d3E434957e907F90C
+-Testnet Explorer Link: https://testnet-zkevm.polygonscan.com/address/0x3Fbf1d96C26db74bc08e0d5d3E434957e907F90C
