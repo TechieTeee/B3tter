@@ -1,6 +1,14 @@
 <h1>B3tter</h1>
 Healthcare Done Better
 
+![B3tter_Bear_Landing](https://github.com/TechieTeee/B3tter/assets/100870737/759ed848-72db-4003-b11e-70d46ba1c680)
+
+
+![Login](https://github.com/TechieTeee/B3tter/assets/100870737/9a8c7087-2f82-46dc-af3c-c2d81a5aafee)
+
+
+![Chat](https://github.com/TechieTeee/B3tter/assets/100870737/f18115a2-e38d-423d-9dbb-79b46a735fa4)
+
 
 B3tter Main Smart Contract Celo Deployment on Alfajores Testnet
 ![image](https://github.com/TechieTeee/B3tter/assets/100870737/ed302f5a-ef9f-4b55-a25c-03ca7f3d9d34)
