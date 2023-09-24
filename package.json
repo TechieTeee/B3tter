@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@biconomy/paymaster": "^3.1.0",
+    "@biconomy/smart-account": "^2.0.2",
     "@huggingface/inference": "^2.5.1",
     "ai": "2.1.27",
     "next": "13.4.4-canary.11",
