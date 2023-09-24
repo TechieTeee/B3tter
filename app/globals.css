@@ -10,5 +10,18 @@ html, body {
   font-family: 'Fredoka One', sans-serif;
 }
 
+.hero-title {
+  font-weight: bold;
+  font-family: "Fredoka One";
+  font-size: 7rem;
+  
+}
+
+.hero-subtitle {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+
 @tailwind utilities;
 

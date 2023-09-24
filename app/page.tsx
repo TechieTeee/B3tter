@@ -1,7 +1,7 @@
 'use client'
 
 import { useChat } from 'ai/react'
-import heroImage from './B3tter_Bear_Landing.png';
+const imageUrl = 'https://clipartmag.com/images/blue-teddy-bear-clipart-23.png';
 
 
 export default function Chat() {
@@ -23,12 +23,19 @@ export default function Chat() {
       {/* Hero Image Container (Centered) */}
       <div className="flex items-center justify-center h-96">
         <img
-          src={heroImage}
-          alt="B3tter Bear"
+          src={imageUrl} // Use the image URL here
+          alt="Hero Image"
           className="max-w-full max-h-full"
         />
       </div>
 
+      <div className="flex justify-center items-center">
+  <h1 className="hero-title">B3tter</h1>
+</div>
+
+<div className="flex justify-center items-center">
+  <h2 className="hero-subtitle">Doing Healthcare Better</h2>
+</div>
 
       {/* Chat Messages */}
       <div className="flex-1 p-4 md:p-8 overflow-y-auto">
