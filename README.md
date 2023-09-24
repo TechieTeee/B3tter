@@ -1,4 +1,3 @@
-<div align="center">
   <h1>B3tter</h1>
 Healthcare Done Better
 
