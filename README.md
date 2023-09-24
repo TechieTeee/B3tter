@@ -1,4 +1,4 @@
-  <h1>B3tter</h1>
+<h1>B3tter</h1>
 Healthcare Done Better
 
 
