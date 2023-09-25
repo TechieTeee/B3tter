@@ -1,5 +1,6 @@
 <h1>B3tter</h1>
 Healthcare Done Better
+Web 3 Reimagining of Web MD Powered By AI, as well as clinicians
 
 ![B3tter_Bear_Landing](https://github.com/TechieTeee/B3tter/assets/100870737/759ed848-72db-4003-b11e-70d46ba1c680)
 
